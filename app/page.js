@@ -1,106 +1,50 @@
-import {
-  FaBell,
-  FaBookmark,
-  FaFaceSmile,
-  FaHouse,
-  FaLocationDot,
-  FaMagnifyingGlass,
-  FaRightFromBracket,
-  FaUser,
-  FaUsers,
-} from "react-icons/fa6";
+import { UilUser, UilMapMarker, UilSmile } from "@iconscout/react-unicons";
+
+import Header from "./components/Header";
+
+import Aside from "./components/Aside";
 
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between items-center px-5 py-2 bg-white">
-        <h2 className="text-3xl font-semibold">Social</h2>
-        <div className="search-bar bg-gray-300 px-5 py-2.5 rounded-full flex items-center gap-2.5">
-          <FaMagnifyingGlass />
-          <input
-          className="bg-transparent"
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Search for creators, inspirations, and projects"
-          />
-      </div>
-      <div className="profile-section flex gap-5">
-        <button
-          className="create bg-blue-500 px-8 text-white rounded-full"
-          type="button"
-          >
-          Create
-        </button>
-        <img
-        className="profile-picture w-12 rounded-full"
-        src="profile.jpg"
-        alt="Profile Picture"
-        />
-    </div>
-  </header>
-
-  <section className="px-8 flex justify-between">
-    <aside className="bg-white rounded-md shadow-md w-fit">
-      <ul>
-        <li>
-          <button className="aside-nav-item">
-            <FaHouse />
-            <span>Home</span>
-          </button>
-        </li>
-        <li>
-          <button className="aside-nav-item">
-            <FaUsers />
-            <span>Friends</span>
-          </button>
-        </li>
-        <li>
-          <button className="aside-nav-item">
-            <FaBookmark />
-            <span>Saved Posts</span>
-          </button>
-        </li>
-        <li>
-          <button className="aside-nav-item">
-            <FaBell />
-            <span>Notifications</span>
-          </button>
-        </li>
-        <li>
-          <button className="aside-nav-item">
-            <FaRightFromBracket />
-            <span>Logout</span>
-          </button>
-        </li>
-      </ul>
-    </aside>
-    <main className="flex flex-column gap-5">
-      <section className="create-post bg-white p-5 rounded-md">
-        <div className="flex gap-2.5">
-        <img className="profile-picture w-12 rounded-full" src="profile.jpg" alt="Profile Picture" />
-        <textarea className="bg-transparent" placeholder="What's on your mind?"></textarea>
-        </div>
-        <div>
-          <div className="flex items-center gap-2.5">
-            <button className="icon-text-btn">
-          <FaUser />
-          <span>People</span>
-            </button>
-            <button className="icon-text-btn">
-          <FaLocationDot />
-          <span>Check In</span>
-            </button>
-            <button className="icon-text-btn">
-          <FaFaceSmile />
-          <span>Mood</span>
-            </button>
-          </div>
-          <button className="rounded-md bg-blue-500 text-white px-5 py-2">Share</button>
-        </div>
-      </section>
-    </main>
-  </section>
-</>
+      <Header />
+      <main className="px-8 flex gap-5 items-start">
+        <Aside />
+        <section className="flex flex-column gap-5 grow">
+          <section className="create-post bg-white p-5 rounded-md w-full">
+            <div className="flex gap-2.5">
+              <img
+                className="profile-picture w-12 h-12 rounded-full"
+                src="profile.jpg"
+                alt="Profile Picture"
+              />
+              <textarea
+                className="bg-transparent"
+                placeholder="What's on your mind?"
+              ></textarea>
+            </div>
+            <div className="flex justify-between">
+              <div className="btn-group flex items-center gap-2.5">
+                <button className="icon-text-btn">
+                  <UilUser />
+                  <span>People</span>
+                </button>
+                <button className="icon-text-btn">
+                  <UilMapMarker />
+                  <span>Check In</span>
+                </button>
+                <button className="icon-text-btn">
+                  <UilSmile />
+                  <span>Mood</span>
+                </button>
+              </div>
+              <button className="rounded-md bg-blue-500 text-white px-5 py-2">
+                Share
+              </button>
+            </div>
+          </section>
+        </section>
+      </main>
+    </>
   );
-  }
+}
