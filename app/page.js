@@ -1,4 +1,4 @@
-import { FaBell, FaBookmark, FaHome, FaSearch, FaUsers } from "react-icons/fa";
+import { FaBell, FaBookmark, FaHome, FaMagnifyingGlass, FaSearch, FaUsers } from "react-icons/fa6";
 import { FaRightFromBracket } from "react-icons/fa6";
 export default function Home() {
   return (
