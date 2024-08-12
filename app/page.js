@@ -1,12 +1,19 @@
-import { FaBell, FaBookmark, FaHome, FaMagnifyingGlass, FaSearch, FaUsers } from "react-icons/fa6";
-import { FaRightFromBracket } from "react-icons/fa6";
+import {
+  FaBell,
+  FaBookmark,
+  FaHouse,
+  FaMagnifyingGlass,
+  FaRightFromBracket,
+  FaUsers,
+} from "react-icons/fa6";
+
 export default function Home() {
   return (
     <>
       <header className="flex justify-between items-center px-5 py-2 bg-white">
         <h2 className="text-3xl font-semibold">Social</h2>
         <div className="search-bar bg-gray-300 px-5 py-2.5 rounded-full flex items-center gap-2.5">
-          <FaSearch />
+          <FaMagnifyingGlass />
           <input
             className="bg-transparent"
             type="search"
@@ -30,44 +37,42 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="px-8">
-        
+      <section className="px-8">
         <aside className="bg-white rounded-md shadow-md w-fit">
           <ul>
             <li>
-              <a className="aside-nav-item" href="javascript:void(0)">
-                <FaHome />
+              <button className="aside-nav-item">
+                <FaHouse />
                 <span>Home</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a className="aside-nav-item" href="javascript:void(0)">
+              <button className="aside-nav-item">
                 <FaUsers />
                 <span>Friends</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a className="aside-nav-item" href="javascript:void(0)">
+              <button className="aside-nav-item">
                 <FaBookmark />
                 <span>Saved Posts</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a className="aside-nav-item" href="javascript:void(0)">
+              <button className="aside-nav-item">
                 <FaBell />
                 <span>Notifications</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a className="aside-nav-item" href="javascript:void(0)">
+              <button className="aside-nav-item">
                 <FaRightFromBracket />
                 <span>Logout</span>
-              </a>
+              </button>
             </li>
           </ul>
         </aside>
-        
-      </main>
+      </section>
     </>
   );
-  }
+}
