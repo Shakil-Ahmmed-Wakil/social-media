@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header className="flex justify-around items-center px-5 py-2 bg-white">
       <h2 className="text-3xl font-semibold">Social</h2>
-      <div className="search-bar bg-gray-300 px-5 py-2.5 rounded-full flex items-center gap-2.5">
+      <div className="search-bar bg-gray-200 px-5 py-2.5 rounded-full flex items-center gap-2.5">
         <UilSearch />
         <input
           className="bg-transparent"
@@ -23,7 +23,7 @@ export default function Header() {
           Create
         </button>
         <img
-          className="profile-picture w-12 rounded-full"
+          className="profile-picture w-10 rounded-full"
           src="profile.jpg"
           alt="Profile Picture"
         />

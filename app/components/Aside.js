@@ -1,12 +1,12 @@
-import { UilHome, UilUsersAlt, UilBookmark, UilBell, UilSignout } from "@iconscout/react-unicons";
+import { UilEstate, UilUsersAlt, UilBookmark, UilBell, UilSignout } from "@iconscout/react-unicons";
 
 export default function Aside() {
   return (
-    <aside className="bg-white rounded-md shadow-md">
+    <aside className="bg-white rounded-lg shadow-md">
       <ul>
         <li>
           <button className="aside-nav-item">
-            <UilHome />
+            <UilEstate />
             <span>Home</span>
           </button>
         </li>
