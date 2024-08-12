@@ -40,7 +40,7 @@ export default function Home() {
     </div>
   </header>
 
-  <section className="px-8">
+  <section className="px-8 flex justify-between">
     <aside className="bg-white rounded-md shadow-md w-fit">
       <ul>
         <li>
@@ -76,10 +76,10 @@ export default function Home() {
       </ul>
     </aside>
     <main className="flex flex-column gap-5">
-      <section className="create-post">
-        <div>
+      <section className="create-post bg-white p-5 rounded-md">
+        <div className="flex gap-2.5">
         <img className="profile-picture w-12 rounded-full" src="profile.jpg" alt="Profile Picture" />
-        <textarea placeholder="What's on your mind?"></textarea>
+        <textarea className="bg-transparent" placeholder="What's on your mind?"></textarea>
         </div>
         <div>
           <div className="flex items-center gap-2.5">
@@ -96,11 +96,11 @@ export default function Home() {
           <span>Mood</span>
             </button>
           </div>
-          <button className="rounded-md bg-blue-500 text-white">Share</button>
+          <button className="rounded-md bg-blue-500 text-white px-5 py-2">Share</button>
         </div>
       </section>
     </main>
   </section>
-</section>
+</>
   );
   }
