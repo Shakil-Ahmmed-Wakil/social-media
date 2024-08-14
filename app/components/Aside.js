@@ -1,36 +1,36 @@
-import { UilEstate, UilUsersAlt, UilBookmark, UilBell, UilSignout } from "@iconscout/react-unicons";
+import { IconBell, IconBookmark, IconHome, IconLogout, IconUsers } from "@tabler/icons-react";
 
 export default function Aside() {
   return (
-    <aside className="bg-white rounded-lg shadow-md">
+    <aside className="bg-white rounded-lg shadow-md hidden md:block">
       <ul>
         <li>
           <button className="aside-nav-item">
-            <UilEstate />
+            <IconHome />
             <span>Home</span>
           </button>
         </li>
         <li>
           <button className="aside-nav-item">
-            <UilUsersAlt />
+            <IconUsers />
             <span>Friends</span>
           </button>
         </li>
         <li>
           <button className="aside-nav-item">
-            <UilBookmark />
+            <IconBookmark />
             <span>Saved Posts</span>
           </button>
         </li>
         <li>
           <button className="aside-nav-item">
-            <UilBell />
+            <IconBell />
             <span>Notifications</span>
           </button>
         </li>
         <li>
           <button className="aside-nav-item">
-            <UilSignout />
+            <IconLogout />
             <span>Logout</span>
           </button>
         </li>

@@ -1,8 +1,8 @@
-import { UilImage, UilMapMarker, UilSmile } from "@iconscout/react-unicons";
+import { IconMapPin, IconMoodSmile, IconPhoto } from "@tabler/icons-react";
 
 export default function CreatePost() {
   return (
-    <form className="create-post bg-white p-5 rounded-lg w-full flex flex-col gap-5">
+    <form className="create-post bg-white p-5 rounded-lg flex flex-col gap-5">
       <div className="flex gap-3">
         <img
           className="profile-picture size-10 rounded-full"
@@ -18,16 +18,16 @@ export default function CreatePost() {
       <div className="flex justify-between">
         <div className="btn-group flex items-center gap-2.5">
           <button className="icon-text-btn">
-            <UilImage />
-            <span>Photo/Video</span>
+            <IconPhoto />
+            <span className="hidden md:inline">Photo/Video</span>
           </button>
           <button className="icon-text-btn">
-            <UilMapMarker />
-            <span>Check In</span>
+            <IconMapPin />
+            <span className="hidden md:inline">Check In</span>
           </button>
           <button className="icon-text-btn">
-            <UilSmile />
-            <span>Feeling/Activity</span>
+            <IconMoodSmile />
+            <span className="hidden md:inline">Feeling/Activity</span>
           </button>
         </div>
         <button

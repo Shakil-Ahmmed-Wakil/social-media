@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="p-5 flex gap-5 items-start">
+      <main className="p-5 flex gap-5 items-start w-full">
         <Aside />
         <section className="flex flex-col gap-5 grow">
-            <CreatePost />
-            <PostCard />
-            <PostCard />
-            <PostCard />
-            <PostCard />
+          <CreatePost />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
         </section>
       </main>
     </>
