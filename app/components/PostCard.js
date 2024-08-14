@@ -27,7 +27,7 @@ export default function PostCard() {
         <p>Lorem ipsum dolor sit amet</p>
         <img
           className="post-image rounded-lg"
-          src="https://picsum.photos/1000"
+          src="https://picsum.photos/1280/720"
           alt="Post Image"
         />
       </div>
