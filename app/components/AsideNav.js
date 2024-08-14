@@ -1,6 +1,6 @@
 import { IconBell, IconBookmark, IconHome, IconLogout, IconUsers } from "@tabler/icons-react";
 
-export default function Aside() {
+export default function AsideNav() {
   return (
     <aside className="bg-white rounded-lg shadow-md hidden md:block">
       <ul>

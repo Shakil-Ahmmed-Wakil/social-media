@@ -1,6 +1,5 @@
-import Aside from "./Aside";
+import Aside from "./AsideNav";
 import { IconMenu2, IconPlus, IconSearch } from "@tabler/icons-react";
-
 
 export default function Header() {
   return (
