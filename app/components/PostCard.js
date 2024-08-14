@@ -21,7 +21,7 @@ export default function PostCard() {
             <span>2 mins ago</span>
           </div>
         </div>
-        <IconDots />
+        <IconDots color="gray" />
       </div>
       <div className="post-content flex flex-col gap-5">
         <p>Lorem ipsum dolor sit amet</p>
@@ -29,15 +29,15 @@ export default function PostCard() {
           className="post-image rounded-lg"
           src="https://picsum.photos/1280/720"
           alt="Post Image"
+          width="1280"
+          height="720"
         />
       </div>
 
-      <div className="flex justify-between text-xs">
+      <div className="flex justify-between text-xs items-center">
         <div className="flex items-center gap-1">
-          <IconThumbUp />
-          <span>
-            Wakil Ahmed
-          </span>
+          <IconThumbUp size="16" />
+          <span>Wakil Ahmed</span>
         </div>
         <div className="flex gap-2">
           <span>41 Comments</span>
@@ -45,16 +45,16 @@ export default function PostCard() {
         </div>
       </div>
 
-      <div className="flex justify-around">
-        <button className="icon-text-btn">
+      <div className="flex justify-between md:justify-around">
+        <button className="icon-text-btn flex items-center justify-center gap-1">
           <IconThumbUp />
           <span>Like</span>
         </button>
-        <button className="icon-text-btn">
+        <button className="icon-text-btn flex items-center justify-center gap-1">
           <IconMessageCircle />
           <span>Comment</span>
         </button>
-        <button className="icon-text-btn">
+        <button className="icon-text-btn flex items-center justify-center gap-1">
           <IconShare3 />
           <span>Share</span>
         </button>

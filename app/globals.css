@@ -5,7 +5,3 @@
 .aside-nav-item {
     @apply w-full flex items-center gap-2 p-5 rounded-lg focus:bg-blue-500 focus:text-white focus:scale-110;
 }
-
-.icon-text-btn {
-  @apply flex items-center gap-2;
-}

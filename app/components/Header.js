@@ -4,7 +4,7 @@ import { IconMenu2, IconPlus, IconSearch } from "@tabler/icons-react";
 
 export default function Header() {
   return (
-    <header className="w-full flex justify-around items-center px-5 py-2 bg-white">
+    <header className="w-full flex justify-between items-center px-5 py-2 bg-white">
       <h2 className="text-3xl font-semibold">Social</h2>
       <div className="search-bar bg-gray-200 px-5 py-2.5 rounded-full  hidden md:flex items-center gap-2.5">
         <IconSearch />
@@ -18,7 +18,7 @@ export default function Header() {
       </div>
       <div className="profile-section flex items-center gap-2">
         <button
-          className="create bg-blue-500 text-white p-2 rounded-full"
+          className="create bg-blue-500 text-white p-2 md:px-8 rounded-full"
           type="button"
         >
           <IconPlus className="md:hidden" />{" "}
@@ -29,7 +29,6 @@ export default function Header() {
           src="profile.jpg"
           alt="Profile Picture"
         />
-        <IconMenu2 className="md:hidden" />
       </div>
     </header>
   );
