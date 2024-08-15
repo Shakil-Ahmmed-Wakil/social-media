@@ -26,7 +26,7 @@ export default function PostCard() {
       <div className="post-content flex flex-col gap-5">
         <p>Lorem ipsum dolor sit amet</p>
         <img
-          className="post-image rounded-lg"
+          className="post-image rounded-lg aspect-[4/3]"
           src="https://picsum.photos/400/300"
           alt="Post Image"
         />

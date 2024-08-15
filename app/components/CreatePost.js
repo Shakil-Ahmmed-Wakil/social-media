@@ -10,7 +10,7 @@ export default function CreatePost() {
           alt="Profile Picture"
         />
         <textarea
-          className="w-full placeholder:text-sm pt-1"
+          className="resize-none w-full placeholder:text-sm pt-1"
           placeholder="What's on your mind?"
         ></textarea>
       </div>

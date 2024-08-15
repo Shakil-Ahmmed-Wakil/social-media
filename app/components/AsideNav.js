@@ -1,13 +1,13 @@
-import { IconBell, IconBookmark, IconHome, IconLogout, IconUsers } from "@tabler/icons-react";
+import { IconBell, IconBookmark, IconLogout, IconUsers, IconUsersGroup } from "@tabler/icons-react";
 
 export default function AsideNav() {
   return (
-    <aside className="bg-white rounded-lg shadow-md hidden md:block">
+    <aside className="w-72 hidden md:block">
       <ul>
         <li>
           <button className="aside-nav-item">
-            <IconHome />
-            <span>Home</span>
+            <img className="size-8 rounded-full" src="/profile.jpg" />
+            <span>Shakil Ahmmed</span>
           </button>
         </li>
         <li>
@@ -20,6 +20,12 @@ export default function AsideNav() {
           <button className="aside-nav-item">
             <IconBookmark />
             <span>Saved Posts</span>
+          </button>
+        </li>
+        <li>
+          <button className="aside-nav-item">
+            <IconUsersGroup />
+            <span>Groups</span>
           </button>
         </li>
         <li>
