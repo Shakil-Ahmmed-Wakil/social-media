@@ -12,7 +12,7 @@ export default function PostCard() {
           />
           <div className="flex flex-col">
             <p>
-              <strong>Shakil Ahmmed</strong>
+              <span className="font-semibold">Shakil Ahmmed</span>
               <span>
                 {" "}
                 shared an <span className="text-blue-500">album</span>
@@ -26,7 +26,7 @@ export default function PostCard() {
       <div className="post-content flex flex-col gap-5">
         <p>Lorem ipsum dolor sit amet</p>
         <img
-          className="post-image rounded-lg aspect-[4/3]"
+          className="post-image rounded-lg w-[400px] h-[300px]"
           src="https://picsum.photos/400/300"
           alt="Post Image"
         />

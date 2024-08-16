@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex gap-5 items-start justify-between w-full">
+      <main className="p-6 flex gap-5 items-start justify-between w-full">
         <AsideNav />
-        <section className="py-6 max-w-[500px] flex flex-col gap-5 grow">
+        <section className="max-w-[500px] flex flex-col gap-5 grow">
           <CreatePost />
           <PostCard />
           <PostCard />

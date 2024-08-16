@@ -5,9 +5,9 @@ export default function AsideNav() {
     <aside className="w-72 hidden md:block">
       <ul>
         <li>
-          <button className="aside-nav-item">
+          <button className="w-full flex items-center gap-2 px-4 pb-4 rounded-lg">
             <img className="size-8 rounded-full" src="/profile.jpg" />
-            <span>Shakil Ahmmed</span>
+            <span className="font-semibold">Shakil Ahmmed</span>
           </button>
         </li>
         <li>
